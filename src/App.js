@@ -62,7 +62,11 @@ function App() {
         </Button>
       </div>
       {selection && (
-        <FormBILL selection={selection} handleSplit={handleSplit} />
+        <FormBILL
+          selection={selection}
+          handleSplit={handleSplit}
+          key={selection.id}
+        />
       )}
     </div>
   );
